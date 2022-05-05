@@ -1,0 +1,8 @@
+#!/bin/bash
+py2=$(python2 --version)
+py3=$(python3 --version)
+
+if [[ "$py2" < "$py3" ]] ;
+ then echo "${py3} is better" 
+ else echo "${py2} is better"
+fi
